@@ -27,6 +27,9 @@
 		6172E242182E31A40042BE78 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6172E22F182E31A40042BE78 /* TransferViewController.m */; };
 		6172E243182E31A40042BE78 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6172E230182E31A40042BE78 /* TransferViewController.xib */; };
 		6172E244182E31A40042BE78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6172E232182E31A40042BE78 /* ViewController.m */; };
+		61B095DE182EA8170062228B /* CustomAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B095DD182EA8170062228B /* CustomAlert.m */; };
+		61B095E1182EA97C0062228B /* customoverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B095E0182EA97C0062228B /* customoverlay.m */; };
+		61B095E3182EAD620062228B /* overlay_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B095E2182EAD620062228B /* overlay_bg.png */; };
 		805D87C9181FCE5F009FC68A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805D87C8181FCE5F009FC68A /* UIKit.framework */; };
 		805D87CB181FCE5F009FC68A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805D87CA181FCE5F009FC68A /* Foundation.framework */; };
 		805D87CD181FCE5F009FC68A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805D87CC181FCE5F009FC68A /* CoreGraphics.framework */; };
@@ -61,6 +64,12 @@
 		6172E230182E31A40042BE78 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransferViewController.xib; path = calendar/TransferViewController.xib; sourceTree = SOURCE_ROOT; };
 		6172E231182E31A40042BE78 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = calendar/ViewController.h; sourceTree = SOURCE_ROOT; };
 		6172E232182E31A40042BE78 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = calendar/ViewController.m; sourceTree = SOURCE_ROOT; };
+		61B095DC182EA8170062228B /* CustomAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlert.h; sourceTree = "<group>"; };
+		61B095DD182EA8170062228B /* CustomAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlert.m; sourceTree = "<group>"; };
+		61B095DF182EA97C0062228B /* customoverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customoverlay.h; sourceTree = "<group>"; };
+		61B095E0182EA97C0062228B /* customoverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customoverlay.m; sourceTree = "<group>"; };
+		61B095E2182EAD620062228B /* overlay_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_bg.png; sourceTree = "<group>"; };
+		61B095E4182EADFF0062228B /* AboutsettingScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutsettingScreen.h; sourceTree = "<group>"; };
 		805D87C4181FCE5F009FC68A /* CalendariOS7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendariOS7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		805D87C8181FCE5F009FC68A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		805D87CA181FCE5F009FC68A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +95,12 @@
 		805D87B9181FCE5F009FC68A = {
 			isa = PBXGroup;
 			children = (
+				61B095E4182EADFF0062228B /* AboutsettingScreen.h */,
+				61B095E2182EAD620062228B /* overlay_bg.png */,
+				61B095DF182EA97C0062228B /* customoverlay.h */,
+				61B095E0182EA97C0062228B /* customoverlay.m */,
+				61B095DC182EA8170062228B /* CustomAlert.h */,
+				61B095DD182EA8170062228B /* CustomAlert.m */,
 				805D87CE181FCE5F009FC68A /* calendar */,
 				805D87C7181FCE5F009FC68A /* Frameworks */,
 				805D87C5181FCE5F009FC68A /* Products */,
@@ -206,6 +221,7 @@
 			files = (
 				6172E243182E31A40042BE78 /* TransferViewController.xib in Resources */,
 				6172E238182E31A40042BE78 /* es.lproj in Resources */,
+				61B095E3182EAD620062228B /* overlay_bg.png in Resources */,
 				6172E23B182E31A40042BE78 /* left_arrow.png in Resources */,
 				6172E237182E31A40042BE78 /* en.lproj in Resources */,
 				6172E241182E31A40042BE78 /* right_arrow@2x.png in Resources */,
@@ -225,11 +241,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6172E23D182E31A40042BE78 /* main.m in Sources */,
+				61B095DE182EA8170062228B /* CustomAlert.m in Sources */,
 				6172E235182E31A40042BE78 /* CKCalendarView.m in Sources */,
 				6172E233182E31A40042BE78 /* AppDelegate.m in Sources */,
 				6172E242182E31A40042BE78 /* TransferViewController.m in Sources */,
 				6172E23E182E31A40042BE78 /* RenewViewController.m in Sources */,
 				6172E244182E31A40042BE78 /* ViewController.m in Sources */,
+				61B095E1182EA97C0062228B /* customoverlay.m in Sources */,
 				6172E236182E31A40042BE78 /* CustomIOS7AlertView.m in Sources */,
 				6172E239182E31A40042BE78 /* FilterViewController.m in Sources */,
 			);

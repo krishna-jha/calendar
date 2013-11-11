@@ -2,7 +2,8 @@
 //  RenewViewController.m
 
 #import "RenewViewController.h"
-
+#import "CustomAlert.h"
+#import "customoverlay.h"
 @interface RenewViewController ()
 
 @end
@@ -21,6 +22,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    customoverlay *customoverlayobj=[[customoverlay alloc]init];
+    [customoverlayobj createCustomOverlay:@"" WithMessage:@"" withobject:Nil WithAction:Nil withkey:Nil withview:self.view];
     // Do any additional setup after loading the view from its nib.
 }
 

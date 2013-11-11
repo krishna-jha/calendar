@@ -48,30 +48,6 @@
    
 }
 
-/*
-- (void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse *)response
-{
-    NSLog(@"Did Receive Response %@", response);
-    responseData = [[NSMutableData alloc]init];
-}
-- (void)connection:(NSURLConnection*)connection didReceiveData:(NSData*)data
-{
-    //NSLog(@"Did Receive Data %@", data);
-    [responseData appendData:data];
-}
-- (void)connection:(NSURLConnection*)connection didFailWithError:(NSError*)error
-{
-    NSLog(@"Did Fail");
-}
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
-    NSLog(@"Did Finish");
-    // Do something with responseData
-}
-
-
-*/
-
 
 
 - (void)viewDidUnload
@@ -232,25 +208,17 @@
 }
 -(void)LeaveDate:(id)sender
 {
-    // Here we need to pass a full frame
     CustomIOS7AlertView *alertView = [[CustomIOS7AlertView alloc] init];
-    
-    // Add some custom content to the alert view
     [alertView setContainerView:[self createDemoView]];
-    
-    // Modify the parameters
     [alertView setButtonTitles:[NSMutableArray arrayWithObjects:@"Close1", @"Close2", @"Close3", nil]];
     [alertView setDelegate:self];
-    
-    // You may use a Block, rather than a delegate.
+     // You may use a Block, rather than a delegate.
     [alertView setOnButtonTouchUpInside:^(CustomIOS7AlertView *alertView, int buttonIndex) {
         NSLog(@"Block: Button at position %d is clicked on alertView %d.", buttonIndex, [alertView tag]);
         [alertView close];
     }];
     
     [alertView setUseMotionEffects:true];
-    
-    // And launch the dialog
     [alertView show];
     //Calendar display
     
@@ -271,7 +239,7 @@
     calendar.onlyShowCurrentMonth = NO;
     calendar.adaptHeightToNumberOfWeeksInMonth = YES;
     
-    calendar.frame = CGRectMake(10, 50, 300, 276);
+    calendar.frame = CGRectMake(10,100, 300, 276);
     [alertView addSubview:calendar];
     
 //    self.dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(calendar.frame) + 4, self.view.bounds.size.width, 24)];
